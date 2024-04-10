@@ -109,8 +109,7 @@ By understanding an athlete's unconscious movement patterns and capitalizing on 
     </div>
     <div className="col-sm-12 col-md-6 col-lg-6">
   <div className="w3-container">
-  <h3 className="w3-border-light-grey w3-padding-8">Come See Us!</h3>
-  <p>Where we are located.</p>
+  <h3 className="w3-border-light-grey w3-padding-8">WHERE WE OPERATE!</h3>
     <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
     <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
     <br />Saturday-Sunday: Closed</p>

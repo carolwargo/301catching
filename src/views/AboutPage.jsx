@@ -157,7 +157,7 @@ export default function AboutPage() {
         <div className="w3-content w3-container w3-padding-64 w3-margin-top">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-4">
-              <h1  className='text-center'>WHERE I'M LOCATED</h1>
+              <h1  className='text-center'>WHERE WE OPERATE!</h1>
               <h5 className='text-center'><em>Huntingtown, Maryland!</em></h5>
             </div>
             <div className='col-lg-8 '>
