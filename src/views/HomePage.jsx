@@ -9,16 +9,15 @@ import about from '../assets/images/Baseball/about.png';
 import Certified from '../assets/images/Baseball/Certified.png';    
 import TopQuote from '../assets/images/Baseball/TopQuote.png';
 
-import VideoHeader from '../components/VideoHeader/VideoHeader';    
+
 function HomePage() {
     return (
         <div className="home w3-black" id="home">
-            <VideoHeader />
  {/*Start Page Content */}
  <div className="w3-content w3-padding">
  {/**Start page container */}
- <div className="w3-container" id="properties">
-    <div className="w3-padding-32">
+ <div className="w3-container">
+    <div className="">
       <BBSocialIcons />
     <h3 className=" w3-border-light-grey "><b>MOTOR</b>
     <span className='fw-light'> |PREFERENCE</span></h3>
@@ -288,7 +287,7 @@ coach requires a unique combination of skill and personality to interact with di
 {/**End About Section */}
 <div className="w3-container w3-padding-48" id="contact">
   <div className="row justify-content-center align-items-center">
-    <div className="col-sm-12 col-md-6 col-lg-6" >
+    <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
 <div className="container">
 <h1 className="w3-border-light-grey w3-padding-16"><b>CONTACT</b>US</h1>
     <p>READY TO GET START!</p>
@@ -304,8 +303,9 @@ coach requires a unique combination of skill and personality to interact with di
     </form>
 </div>
     </div>
-    <div className="col-sm-12 col-md-6 col-lg-6">
-  <div className="w3-container">
+    
+    <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
+<div className="container">
   <h3 className="w3-border-light-grey w3-padding-8">WHERE WE TRAIN | WHERE WE ARE LOCATED</h3>
   
     <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
