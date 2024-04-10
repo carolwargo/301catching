@@ -3,50 +3,15 @@ import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import LocationView from "../assets/images/LocationView.png";
 import BBSocialIcons from '../components/Baseball/BBSocialIcons';
-import Certified from '../assets/images/Baseball/Certified.png';    
-import VideoHeader from "../components/VideoHeader/VideoHeader";
+import Certified from '../assets/images/Baseball/Certified.png';   
 
 function BaseballPage() {
 
-    const styles = {
-        chatWidget: {
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          backgroundColor: '#f9f9f9',
-          border: '1px solid #ccc',
-          borderRadius: '8px',
-          padding: '10px',
-          boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
-          zIndex: '9999',
-        },
-        chatWidgetContent: {
-          display: 'flex',
-          alignItems: 'center',
-        },
-        chatWidgetText: {
-          marginRight: '10px',
-        },
-        chatWidgetIcon: {
-          color: '#007bff',
-        },
-      };
     return (
         <div className="home" id="home">
-            <VideoHeader/>
-
  {/*Start Page Content */}
  <div className="w3-content w3-padding" style={{maxWidth:"1564px"}}>
-       {/*Start Live Chat */}
-       <div className="w3-padding-32"></div>
-     <div className="chat-widget" style={styles.chatWidget}>
-      <div className="chat-widget-content" style={styles.chatWidgetContent}>
-        <span className="chat-widget-text" style={styles.chatWidgetText}>Live Chat</span>
-        <i className="fas fa-comments chat-widget-icon" style={styles.chatWidgetIcon}></i>
-      </div>
-    </div>
-    {/*End Live Chat */}
-    
+
  {/**Start page container */}
  <div className="w3-container w3-padding-16" id="properties">
 
