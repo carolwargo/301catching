@@ -19,7 +19,41 @@ function HomePage() {
  <div className="w3-container">
     <div className="">
       <BBSocialIcons />
-    <h3 className=" w3-border-light-grey "><b>MOTOR</b>
+   
+<div className="row">
+    <div className="w3-col l6 m6 w3-margin-bottom">
+      <div className="w3-display-container">
+        <div className="w3-display-topleft w3-black w3-padding w3-padding-24 w3-xxlarge">
+        <b>TRAIN</b><span className='text-secondary'>|CATCHING</span>
+       
+            </div>
+            
+            <img src={Catch} alt="catch" style={{width:"100%"}} 
+            
+        className='w3-opacity w3-hover-opacity-off'/>
+      </div>
+      <button className="w3-button w3-light-gray w3-section" style={{boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)'}}>
+      <b>LEARN MORE</b><i className="fas fa-angle-double-right w3-margin-left"></i>
+      </button>
+    </div>
+    <div className="w3-col l6 m6 w3-margin-bottom">
+      <div className="w3-display-container">
+        <div className="w3-display-topleft w3-black w3-padding w3-padding-24 w3-xxlarge">
+            <b>PROFILE</b><span className='text-secondary'>|ME</span></div>
+            <img src={Hit} alt="catch" style={{width:"100%"}} 
+        className='w3-opacity w3-hover-opacity-off'/>
+      </div>
+      <button className="w3-button w3-light-gray w3-section" style={{boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)'}}>
+      <b>LEARN MORE</b><i className="fas fa-angle-double-right w3-margin-left"></i>
+      </button>
+    </div>
+    </div>
+   
+    <br />
+   <br />
+   <br />
+   <br />
+   <h3 className=" w3-border-light-grey "><b>MOTOR</b>
     <span className='fw-light'> |PREFERENCE</span></h3>
   <p className="w3-margin-bottom">What is Motor Preference?</p>
   <h4>When you're in the zone, mastering baseball becomes effortless, and 
@@ -45,39 +79,15 @@ athletic careers.</p>
     className="link-primary justify-content-end text-decoration-none"> Review the science, Click to learn more...</Link>
         </span>
         </p> 
-<div className="row">
-    <div className="w3-col l6 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding w3-padding-24 w3-xxlarge">
-        <b>TRAIN</b><span className='text-secondary'>|CATCHING</span>
-       
-            </div>
-            
-            <img src={Catch} alt="catch" style={{width:"100%"}} 
-            
-        className='w3-opacity w3-hover-opacity-off'/>
-      </div>
-      <button className="w3-button w3-light-gray w3-section" style={{boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)'}}>
-      <b>LEARN MORE</b><i className="fas fa-angle-double-right w3-margin-left"></i>
-      </button>
-    </div>
-    <div className="w3-col l6 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding w3-padding-24 w3-xxlarge">
-            <b>TRAIN</b><span className='text-secondary'>|MECHANICS</span></div>
-            <img src={Hit} alt="catch" style={{width:"100%"}} 
-        className='w3-opacity w3-hover-opacity-off'/>
-      </div>
-      <button className="w3-button w3-light-gray w3-section" style={{boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)'}}>
-      <b>LEARN MORE</b><i className="fas fa-angle-double-right w3-margin-left"></i>
-      </button>
-    </div>
-    </div>
-   
-    <br />
+
+
+
+        <br />
    <br />
    <br />
    <br />
+
+
    
     <div className="row">
     <div className="w3-col l6 m6 w3-margin-bottom">
@@ -237,55 +247,67 @@ athletic careers.</p>
     </div>
     <hr />
     {/* Start About Grid */}
-    <div className="w3-row-padding d-flex justify-content-center">
- 
-    <img src={TopQuote} alt="topquote" style={{ width: "80%" }} />
+    <div className="w3-content w3-container">
+    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px' }}/>
+    <h1 className="text-center" style={{ marginBottom:'10px', marginTop:'0px' }}><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h1>
+   </div>
 
-</div>
 
      {/* Start About Grid */}
-    <div className="w3-row-padding w3-margin-bottom w3-grayscale">
-      <h3 className="text-center"><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h3>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+    <div className="row w3-margin-bottom w3- w3-grayscale">
+     
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
         <img src={Hit} alt="John" style={{ width: "100%" }} />
+        <div className="w3-container w3-white">
+        <p style={{ fontSize: '14px' }}>“Corey is an outstanding catching instructor. He empowers catchers to seize every advantage. His approach is direct and instruction is visual. I'm appreciative of the friendship and have the uptmost confidence in Corey’s ability to provide knowledgeable assitance."</p>
         <h4>JOHN POSS <br /><span style={{fontSize:'18px'}}>University of Maryland</span></h4>
         <p className="w3-opacity">
 Assistant Coach|Recruiting Coordinator</p>
-        <p style={{ fontSize: '14px' }}>“Corey is an outstanding catching instructor. He empowers catchers to seize every advantage. His approach is direct and instruction is visual. I'm appreciative of the friendship and have the uptmost confidence in Corey’s ability to provide knowledgeable assitance."</p>
-        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
       </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+      </    div>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
         <img src={Hit} alt="Jane" style={{ width: "100%" }} />
+        <div className="w3-container w3-white">
+        <p style={{ fontSize: '14px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field. ”</p>
         <h4>GUY SMITH <br /><span style={{fontSize:'18px'}}>Huntingtown High School</span></h4>
         <p className="w3-opacity">
 5-Tool|Former UMD Pitcher</p>
-        <p style={{ fontSize: '14px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field. ”</p>
-        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
-        <img src={Hit} alt="Mike" style={{ width: "100%" }} />
-        <h4>RYAN TERRILL <br /><span style={{fontSize:'18px'}}>George Mason University</span></h4>
-        <p className="w3-opacity">
-Assistant Coach|Recruiting Coordinator</p>
-        <p style={{ fontSize: '14px' }}>"Coach Wargo has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament to his expertise. While his training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."</p>
-        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+    </div>
+        </div>  
+        <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{ position: 'relative' }}>
+  <div className="w3-container w3-white w3-padding-16 rounded" style={{ position: 'relative' }}>
+   <br />
+   <br />
+    <div style={{ fontSize: '14px', paddingTop:'6rem' }}>
+    <img src={Hit} alt="Mike" style={{ width: "50%", borderRadius: '50%', position: 'absolute', right: 80, bottom: '23rem' }} />
+    <p className="w3-margin-top"> 
+      "Coach Wargo has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament to his expertise. While his training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."
+    </p>
+   
+    <h4 className="mb-0 pb-0 ">RYAN TERRILL <br /><span style={{ fontSize: '16px' }}>GMU</span></h4>
+    <p className="w3-opacity mt-0 pt-0 " style={{ fontSize: '14px' }}>Assistant Coach <br />Recruiting Coordinator</p>
+  </div>
+  </div>
+</div>
+
+
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
         <img src={Hit} alt="Dan" style={{ width: "100%" }} />
+        <div className="w3-container w3-white">
+        <p style={{ fontSize: '14px' }}>“ Being an elite catching 
+coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
         <h4>JOE SINGLEY <br /><span style={{fontSize:'18px'}}>Cincinatti Reds</span></h4>
         <p className="w3-opacity">
         Asst Catching Coach|Bull Pen Catcher</p>
-        <p style={{ fontSize: '14px' }}>“ Being an elite catching 
-coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
-        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
-      </div>
+</div>
+    </div>
     </div>
   </div>
 </div>
 
 {/**End About Grid */}
 {/**End About Section */}
-<div className="w3-container w3-padding-48" id="contact">
+<div className="w3-container w3-padding-48 w3-white" id="contact">
   <div className="row justify-content-center align-items-center">
     <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
 <div className="container">

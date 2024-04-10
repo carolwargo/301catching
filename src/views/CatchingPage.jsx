@@ -29,7 +29,7 @@ function CatchingBlogPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">Title</span>
+                    <span className="w3-large">FRAMING</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>
@@ -43,7 +43,7 @@ function CatchingBlogPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">Title</span>
+                    <span className="w3-large">BLOCKING</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>
@@ -56,7 +56,7 @@ function CatchingBlogPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">Title</span>
+                    <span className="w3-large">THROWING</span>
                     <br></br>
                     <span>Sed mattis nunc</span>
                   </li>
@@ -70,7 +70,7 @@ function CatchingBlogPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">Title</span>
+                    <span className="w3-large">LEADERSHIP</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>

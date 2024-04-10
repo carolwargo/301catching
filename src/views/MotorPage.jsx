@@ -10,8 +10,11 @@ function MotorPage() {
         <div>
          {/**Start page container */}
  <div className="w3-container">
-    <div className="">
+    <div>
       <BBSocialIcons />
+      <h1>Perform as your body wants to!****Primal performance is the key to success.
+It's easier, more efficient and safer!
+</h1>
     <h3 className=" w3-border-light-grey "><b>MOTOR</b>
     <span className='fw-light'> |PREFERENCE</span></h3>
   <p className="w3-margin-bottom">What is Motor Preference?</p>
