@@ -18,7 +18,7 @@
 /* Styles for the container of sticky social icons */
 .sticky-social-icons {
     position: fixed;
-    top: 50%; /* Adjust as needed */
+    top: 40%; /* Adjust as needed */
     right: 0;
     transform: translateY(40%);
     z-index: 1000; /* Ensure it's above other content */
@@ -28,19 +28,19 @@
 .sticky-social-icon {
     display: block;
     margin-bottom: 5px; /* Adjust as needed */
-    background-color: #000000; /* Background color of the icon */
+    background-color: red; /* Background color of the icon */
     color: #ffffff; /* Color of the icon */
     border-radius: 50%; /* Makes it a circle */
-    width: 40px; /* Width of the icon */
-    height: 40px; /* Height of the icon */
+    width: 35px; /* Width of the icon */
+    height: 35px; /* Height of the icon */
     text-align: center;
-    line-height: 40px; /* Center the icon vertically */
+    line-height: 35px; /* Center the icon vertically */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
 }
 
 /* Styles for the icon inside the container */
 .sticky-social-icon i {
-    font-size: 20px; /* Size of the icon */
+    font-size: 15px; /* Size of the icon */
 }
 
 /* Hover styles for the social icons */

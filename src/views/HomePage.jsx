@@ -8,6 +8,9 @@ import Catch from "../assets/images/Baseball/Catch.png";
 import about from '../assets/images/Baseball/about.png';
 import Certified from '../assets/images/Baseball/Certified.png';    
 import TopQuote from '../assets/images/Baseball/TopQuote.png';
+import BottomQuote from '../assets/images/Baseball/BottomQuote.png';
+import { MdOutlineStar } from "react-icons/md";
+
 
 
 function HomePage() {
@@ -195,15 +198,6 @@ athletic careers.</p>
 <br />
 
 
-{/**End We Shed */} 
-{/**End Projects Section */}
-
-
-
-
-
-
-
 
 
 
@@ -247,60 +241,102 @@ athletic careers.</p>
     </div>
     <hr />
     {/* Start About Grid */}
-    <div className="w3-content w3-container">
-    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px' }}/>
-    <h1 className="text-center" style={{ marginBottom:'10px', marginTop:'0px' }}><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h1>
+    <div className="w3-content w3-container  w3-margin-bottom ">
+    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
+    <h1 className="text-center" style={{fontSize:'2.5rem'}}><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h1>
+   <br />
    </div>
 
 
-     {/* Start About Grid */}
-    <div className="row w3-margin-bottom w3- w3-grayscale">
-     
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
+     {/* Start Testimonials Grid */}
+    <div className="row w3-margin-bottom w3-grayscale">
+    <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
         <img src={Hit} alt="John" style={{ width: "100%" }} />
-        <div className="w3-container w3-white">
+        <div className="w3-container w3-white w3-padding-16">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+</header>
+<div className="w3-margin-top">
+<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
+        <p style={{ fontSize: '14px' }}>“ Being an elite catching coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
+        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
+        <h5 className='w3-margin-top'>JOE SINGLEY <br /><span style={{fontSize:'18px'}}>Cincinatti Reds</span></h5>
+        <p className="w3-opacity" style={{fontSize:'14px'}}>
+        Asst Catching Coach|Bull Pen Catcher</p>
+      </div>
+      </div>
+      </div>
+
+
+
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
+        <img src={Hit} alt="John" style={{ width: "100%" }} />
+        <div className="w3-container w3-white w3-padding-16">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+</header>
+<div className="w3-margin-top">
+<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
         <p style={{ fontSize: '14px' }}>“Corey is an outstanding catching instructor. He empowers catchers to seize every advantage. His approach is direct and instruction is visual. I'm appreciative of the friendship and have the uptmost confidence in Corey’s ability to provide knowledgeable assitance."</p>
-        <h4>JOHN POSS <br /><span style={{fontSize:'18px'}}>University of Maryland</span></h4>
-        <p className="w3-opacity">
+        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px'}}/>
+        <h5 className='w3-margin-top'>JOHN POSS <br /><span style={{fontSize:'18px'}}>University of Maryland</span></h5>
+        <p className="w3-opacity" style={{fontSize:'14px'}}>
 Assistant Coach|Recruiting Coordinator</p>
       </div>
-      </    div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={Hit} alt="Jane" style={{ width: "100%" }} />
-        <div className="w3-container w3-white">
-        <p style={{ fontSize: '14px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field. ”</p>
-        <h4>GUY SMITH <br /><span style={{fontSize:'18px'}}>Huntingtown High School</span></h4>
-        <p className="w3-opacity">
-5-Tool|Former UMD Pitcher</p>
-    </div>
-        </div>  
-        <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{ position: 'relative' }}>
-  <div className="w3-container w3-white w3-padding-16 rounded" style={{ position: 'relative' }}>
-   <br />
-   <br />
-    <div style={{ fontSize: '14px', paddingTop:'6rem' }}>
-    <img src={Hit} alt="Mike" style={{ width: "50%", borderRadius: '50%', position: 'absolute', right: 80, bottom: '23rem' }} />
-    <p className="w3-margin-top"> 
-      "Coach Wargo has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament to his expertise. While his training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."
-    </p>
-   
-    <h4 className="mb-0 pb-0 ">RYAN TERRILL <br /><span style={{ fontSize: '16px' }}>GMU</span></h4>
-    <p className="w3-opacity mt-0 pt-0 " style={{ fontSize: '14px' }}>Assistant Coach <br />Recruiting Coordinator</p>
-  </div>
-  </div>
-</div>
+      </div>
+      </div>
 
 
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={Hit} alt="Dan" style={{ width: "100%" }} />
-        <div className="w3-container w3-white">
-        <p style={{ fontSize: '14px' }}>“ Being an elite catching 
-coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
-        <h4>JOE SINGLEY <br /><span style={{fontSize:'18px'}}>Cincinatti Reds</span></h4>
-        <p className="w3-opacity">
-        Asst Catching Coach|Bull Pen Catcher</p>
-</div>
-    </div>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
+        <img src={Hit} alt="John" style={{ width: "100%" }} />
+        <div className="w3-container w3-white w3-padding-16">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+</header>
+<div className="w3-margin-top">
+<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
+        <p style={{ fontSize: '14px' }}>"301CATCHING has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament. While their training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."</p>
+        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
+        <h5 className='w3-margin-top'>RYAN TERRILL <br /><span style={{fontSize:'18px'}}>George Mason Univ.</span></h5>
+        <p className="w3-opacity" style={{fontSize:'14px'}}>
+Assistant Coach|Recruiting Coordinator</p>
+      </div>
+      </div>
+      </div>
+
+
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
+        <img src={Hit} alt="John" style={{ width: "100%" }} />
+        <div className="w3-container w3-white w3-padding-16">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+</header>
+<div className="w3-margin-top">
+<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
+        <p style={{ fontSize: '14px', paddingBottom:'0px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field.”</p>
+        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
+        <h5 className='w3-margin-top'>GUY SMITH <br /><span style={{fontSize:'18px'}}>Huntingtown High School</span></h5>
+        <p className="w3-opacity" style={{fontSize:'14px'}}>
+        5-Tool|Former UMD Pitcher</p>
+      </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>
