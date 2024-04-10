@@ -8,10 +8,7 @@ import Catch from "../assets/images/Baseball/Catch.png";
 import about from '../assets/images/Baseball/about.png';
 import Certified from '../assets/images/Baseball/Certified.png';    
 import TopQuote from '../assets/images/Baseball/TopQuote.png';
-import GUY from '../assets/images/Baseball/GUY.png';
-import RYAN from '../assets/images/Baseball/RYAN.png';
-import JOE from '../assets/images/Baseball/JOE.png';
-import JOHN from '../assets/images/Baseball/JOHN.png';
+
 import VideoHeader from '../components/VideoHeader/VideoHeader';    
 function HomePage() {
     return (
@@ -222,19 +219,19 @@ athletic careers.</p>
     <div className="row w3-padding w3-grayscale">
       <div className="col-md-4">
         <div className="container">
-          <h3><b>OUR</b>VISION.</h3>
+          <h3><b>OUR</b><span className="text-secondary">VISION.</span></h3>
           <p style={{ fontSize: '14px' }}>Driven by a visionary outlook, our approach to real estate is refreshingly distinct. Unlike conventional definitions of luxury that prioritize size and paid amenities, our vision is centered around the notion of uniqueness. For us, luxury properties are not merely defined by their grandeur, but by their exceptional qualities and unparalleled character. It's this emphasis on individuality and exclusivity that sets their projects apart in a crowded marketplace.</p>
         </div>
       </div>
       <div className="col-md-4">
         <div className="container ">
-          <h3><b>OUR</b>PASSION.</h3>
+          <h3><b>OUR</b><span className="text-secondary">PASSION.</span></h3>
           <p style={{ fontSize: '14px' }}>Our passion lies in uncovering hidden gems, each property meticulously chosen for its ability to transport you to a world of unparalleled tranquility and opulence. Whether you seek the solace of a high-end cabin enveloped by nature's embrace, the serenity of a she shed designed for refined relaxation, or the rustic charm of a barn transformed into a luxurious abode, Peasant Properties is your gateway to an extraordinary living experience.</p>
         </div>
       </div>
       <div className="col-md-4">
         <div className="container">
-          <h3><b>OUR</b>COMMITMENT.</h3>
+          <h3><b>OUR</b><span className="text-secondary">COMMITMENT.</span></h3>
           <p style={{ fontSize: '14px' }}>We pledge and commitment to personalized service and an unwavering dedication to excellence, we strive to make your dream of owning a unique sanctuary a reality. Trust in Peasant Properties to guide you on a journey to discover the extraordinary, where luxury meets seclusion and exclusivity knows no bounds. Welcome to a world where every property tells a story, and your next chapter begins with us.</p>
         </div>
       </div>
@@ -247,22 +244,42 @@ athletic careers.</p>
 
 </div>
 
-      <div className="w3-row-padding">
-      <div className="container w3-padding-16">
-      <h1 className="text-center"><b>OUR</b><span className="fw-light">|REPUTATION.</span></h1>
-   </div>
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={RYAN} alt="Ryan" style={{ width: "100%" }} />
-    </div>
-    <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={JOE} alt="Joe" style={{ width: "100%" }} />
-    </div>
-    <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={GUY} alt="Ryan" style={{ width: "100%" }} />
-    </div>
-    <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top">
-        <img src={JOHN} alt="Joe" style={{ width: "100%" }} />
-    </div>
+     {/* Start About Grid */}
+    <div className="w3-row-padding w3-margin-bottom w3-grayscale">
+      <h3 className="text-center"><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h3>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+        <img src={Hit} alt="John" style={{ width: "100%" }} />
+        <h4>JOHN POSS <br /><span style={{fontSize:'18px'}}>University of Maryland</span></h4>
+        <p className="w3-opacity">
+Assistant Coach|Recruiting Coordinator</p>
+        <p style={{ fontSize: '14px' }}>“Corey is an outstanding catching instructor. He empowers catchers to seize every advantage. His approach is direct and instruction is visual. I'm appreciative of the friendship and have the uptmost confidence in Corey’s ability to provide knowledgeable assitance."</p>
+        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+        <img src={Hit} alt="Jane" style={{ width: "100%" }} />
+        <h4>GUY SMITH <br /><span style={{fontSize:'18px'}}>Huntingtown High School</span></h4>
+        <p className="w3-opacity">
+5-Tool|Former UMD Pitcher</p>
+        <p style={{ fontSize: '14px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field. ”</p>
+        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+        <img src={Hit} alt="Mike" style={{ width: "100%" }} />
+        <h4>RYAN TERRILL <br /><span style={{fontSize:'18px'}}>George Mason University</span></h4>
+        <p className="w3-opacity">
+Assistant Coach|Recruiting Coordinator</p>
+        <p style={{ fontSize: '14px' }}>"Coach Wargo has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament to his expertise. While his training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."</p>
+        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
+      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+        <img src={Hit} alt="Dan" style={{ width: "100%" }} />
+        <h4>JOE SINGLEY <br /><span style={{fontSize:'18px'}}>Cincinatti Reds</span></h4>
+        <p className="w3-opacity">
+        Asst Catching Coach|Bull Pen Catcher</p>
+        <p style={{ fontSize: '14px' }}>“ Being an elite catching 
+coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
+        <p><button className="w3-button w3-light-grey w3-block">Contact</button></p>
+      </div>
     </div>
   </div>
 </div>
@@ -274,14 +291,14 @@ athletic careers.</p>
     <div className="col-sm-12 col-md-6 col-lg-6" >
 <div className="container">
 <h1 className="w3-border-light-grey w3-padding-16"><b>CONTACT</b>US</h1>
-    <p>Let's talk about our next project.</p>
+    <p>READY TO GET START!</p>
  
 <form action="/action_page.php" target="_blank">
       <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name"/>
       <input className="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email"/>
       <input className="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject"/>
       <input className="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment"/>
-      <button className="w3-button w3-black w3-section" type="submit">
+      <button className="w3-button w3-light-gray w3-section" type="submit">
         <i className="fa fa-paper-plane"></i> SEND MESSAGE
       </button>
     </form>
@@ -289,8 +306,8 @@ athletic careers.</p>
     </div>
     <div className="col-sm-12 col-md-6 col-lg-6">
   <div className="w3-container">
-  <h3 className="w3-border-light-grey w3-padding-8">Come See Us!</h3>
-  <p>Where we are located.</p>
+  <h3 className="w3-border-light-grey w3-padding-8">WHERE WE TRAIN | WHERE WE ARE LOCATED</h3>
+  
     <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
     <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
     <br />Saturday-Sunday: Closed</p>
