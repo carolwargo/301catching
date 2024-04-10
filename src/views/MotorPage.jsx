@@ -12,13 +12,20 @@ function MotorPage() {
  <div className="w3-container">
     <div>
       <BBSocialIcons />
-      <h1>Perform as your body wants to!****Primal performance is the key to success.
+      <h1 className=" w3-border-light-grey "><b>MOTOR</b>
+    <span className='fw-light'> |PREFERENCE</span></h1>
+    <p className="w3-margin-bottom">What is Motor Preference?</p>
+    </div>
+
+
+    
+      <h1>Perform as your body wants to!
 It's easier, more efficient and safer!
 </h1>
-    <h3 className=" w3-border-light-grey "><b>MOTOR</b>
-    <span className='fw-light'> |PREFERENCE</span></h3>
-  <p className="w3-margin-bottom">What is Motor Preference?</p>
-  <h4>When you're in the zone, mastering baseball becomes effortless, and 
+<h1 className="text-danger">Primal performance is the key to success.
+
+</h1>
+<h4>When you're in the zone, mastering baseball becomes effortless, and 
     every move feels like second nature.</h4>
   
   <p>Entering this state of flow occurs when your natural coordination 
@@ -94,7 +101,7 @@ athletic careers.</p>
     </div>
     
     </div>
-    </div>
+   
     </div> 
         </div>
     );

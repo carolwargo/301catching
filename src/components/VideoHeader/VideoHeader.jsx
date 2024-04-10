@@ -46,14 +46,15 @@ function VideoHeader() {
 <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
 }}
 >
-LEARN MORE
+CATCHING
       </button>
     
-      <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
+    <Link to='/motor'> <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
 }}
 >
 WHAT'S NEW
       </button>
+      </Link> 
 </div>
       </motion.div>
     </AnimatePresence>
