@@ -43,13 +43,12 @@ function VideoHeader() {
         <h6 style={{color:'white'}}> Providing Players with the skills to master their craft & elevate their game.</h6>
         <hr/>
         <div className='w3-padding-large'>
-<button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
-}}
->
-CATCHING
-      </button>
+<button className="w3-button w3-large w3-black m-1" 
+style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
+CATCHING </button>
     
-    <Link to='/motor'> <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
+    <Link to='/motor'> 
+    <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
 }}
 >
 WHAT'S NEW
@@ -62,7 +61,7 @@ WHAT'S NEW
                        
             </div>
                     </div>
-                    <Navbar expand="lg" className="fixed-top " style={{ backgroundColor: 'white', zIndex: 100, boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)' }}>
+                    <Navbar expand="lg" className="fixed-top shadow" style={{ backgroundColor: 'white', zIndex: 100, boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)' }}>
                 <Container fluid className='align-items-center'>
                     <Navbar.Brand   href="/" className="w3-tag w3-hover-opacity shadow">
                    <b style={{fontFamily:'serif', color:'white'}}>301</b>

@@ -338,6 +338,35 @@ Assistant Coach|Recruiting Coordinator</p>
       </div>
       </div>
     </div>
+    <div className="w3-content w3-container  w3-margin-bottom ">
+    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
+    <h1 className="text-center w3-padding-16" style={{fontSize:'2.5rem'}}><b>MOTOR</b><span className="text-secondary">|PREFERENCES.</span></h1>
+    
+    <div className="container text-align d-flex justify-content-center align-items-center flex-wrap">
+<div className="row">
+<div className="col-sm-12 col-md-3 col-lg-2"></div>
+<div className="col-sm-12 col-md-4 col-lg-4">
+  <div className="justify-content-center">
+  <p className="text-center"> Click Start Now To Schedule a Profile Evaluation.</p>
+   <button className="w3-button w3-red w3-section mx-1" style={{ boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)', width:'100%' }}>
+      <b>START NOW</b><i className="fas fa-angle-double-right w3-margin-left"></i>
+    </button>
+   </div>
+    </div>
+    <div className="col-sm-12 col-md-4 col-lg-4">
+  <div className="justify-content-center">
+  <p className="text-center"> Have Questions? Click Learn more to get the answers. </p>
+      <button className="w3-button w3-red w3-section mx-1" style={{ boxShadow: '0 4px 10px rgba(255, 255, 255, 0.4)', width:'100%' }}>
+      <b>LEARN MORE</b><i className="fas fa-angle-double-right w3-margin-left"></i>
+    </button>
+   </div>
+    </div>
+    <div className="col-sm-12 col-md-2 col-lg-2"></div>
+</div>
+</div>
+
+   <br />
+   </div>
   </div>
 </div>
 
@@ -364,14 +393,15 @@ Assistant Coach|Recruiting Coordinator</p>
     
     <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
 <div className="container">
-  <h3 className="w3-border-light-grey w3-padding-8">WHERE WE OPERATE!</h3>
+  <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
   
     <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
+    <div className="w3-margin-top">
     <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
     <br />Saturday-Sunday: Closed</p>
+    </div>
   </div>
 </div>
-
   </div>
   </div>
   

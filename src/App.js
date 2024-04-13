@@ -2,13 +2,15 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LayoutSimple from "./components/LayoutSimple.jsx";
-import CatchingLayout from "./components/Catching/CatchingLayout.jsx";
+//import CatchingLayout from "./components/Catching/CatchingLayout.jsx";
 import CatchingPage from "./views/CatchingPage.jsx";
 import HomePage from "./views/HomePage.jsx";
 import AboutPage from "./views/AboutPage.jsx";
 import ContactPage from "./views/ContactPage.jsx";
 import BaseballPage from "./views/BaseballPage.jsx";
 import MotorPage from "./views/MotorPage.jsx";
+//import MotorLayout from "./components/Motor/MotorLayout.jsx";
+//import Scroll from "./views/Scroll.jsx";
 import VideoHeader from "./components/VideoHeader/VideoHeader.jsx";
 import "./App.css";
 
@@ -36,15 +38,28 @@ function App() {
               </>
             }
           />
-          {/* Start CatchingLayout with CatchingHeader and CatchingFooter */}
-         <Route element={<CatchingLayout />}>
-            <Route path="/catching" element={<CatchingPage />} />
+             <Route
+            path="/catching"
+            element={
+              <>
+                <VideoHeader />
+                <CatchingPage />
+              </>
+            }
+          />
+          {/*
+         <Route element={<MotorLayout />}>
+         <Route path="/scroll" element={<Scroll />} />
           </Route>
-                    {/* End CatchingLayout */}
-          <Route path="/layout-simple" element={<LayoutSimple />} />
+                  */}
+
+          <Route element={<LayoutSimple />} >
         <Route path="/motor" element={ <MotorPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/motor" element={<MotorPage />} />
+     
+          </Route>
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>

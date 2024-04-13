@@ -16,22 +16,22 @@ function LayoutNav() {
         
         >
               
-                    <Navbar expand="lg" className="fixed-top shadow" style={{ backgroundColor: 'white', zIndex: 100 }}>
+                    <Navbar expand="lg" className="fixed-top shadow" style={{ backgroundColor: 'white', zIndex: 100,  }}>
                 <Container fluid>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor:'white' }} className='border-none '/>
                     <Navbar.Collapse id="basic-navbar-nav" style={{ color: 'black' }}  className='border-none'>
-                        <Nav className="me-auto" id="custom-bb-nav-links">
-                            <Nav.Link as={Link} to="/about" style={{ color: 'black'}} id="custom-bb-nav-links" className="w3-margin-right">
-                                <b>ABOUT</b>
+                        <Nav className="me-auto " id="custom-bb-nav-links">
+                            <Nav.Link as={Link} to="/about" style={{ color: 'black' , textShadow: '0 6px 12px rgba(255, 0, 0, 0.4)'}} id="custom-bb-nav-links" className="mx-1">
+                                ABOUT
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/catching" style={{ color: 'black'}} id="custom-bb-nav-links" className="w3-margin-right">
-                                <b>CATCHING</b>
+                            <Nav.Link as={Link} to="/catching" style={{ color: 'black' , textShadow: '0 6px 12px rgba(255, 0, 0, 0.4)'}} id="custom-bb-nav-links" className="mx-1">
+                                CATCHING
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/performance" style={{ color: 'black'}} id="custom-bb-nav-links" className="w3-margin-right">
-                              <b>PERFORMANCE</b>
+                            <Nav.Link as={Link} to="/performance" style={{ color: 'black' , textShadow: '0 6px 12px rgba(255, 0, 0, 0.4)'}} id="custom-bb-nav-links" className="mx-1">
+                              PERFORMANCE
                             </Nav.Link>
-                            <Nav.Link as={Link} to="/contact" style={{ color: 'black'}} id="custom-bb-nav-links" className="w3-margin-right">
-                                <b>CONTACT</b>
+                            <Nav.Link as={Link} to="/contact" style={{ color: 'black' , textShadow: '0 6px 12px rgba(255, 0, 0, 0.4)'}} id="custom-bb-nav-links" className="mx-1">
+                                CONTACT
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
