@@ -7,6 +7,7 @@ import { GiGears } from "react-icons/gi";
 
 import Corey from '../assets/images/Baseball/Corey.png';
 import LocationView from '../assets/images/LocationView.png';
+import JOHN from '../assets/images/Baseball/JOHN.png';
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
@@ -129,22 +130,46 @@ export default function AboutPage() {
 <br />
 </div>
 {/**End technical proficiencies */}
+{/*start testimonials */}
+<div className="w3-row w3-center w3-black w3-padding-32">
+  <div className="w3-half w3-section">
+    <div className="row">
+    <div className="w3-third w3-section">
+    <div className="w3-container w3-card w3-white">
+      <img src={JOHN} alt="john" style={{width:'100%'}}></img>
+     </div>
+      </div>
+      <div className="w3-twothird w3-section">
+      <i className="fa fa-quote-left w3-xxlarge"></i>
+      <i className="fa fa-quote-right w3-xxlarge"></i>
+      </div>
+    </div>
+  </div>
+  <div className="w3-half w3-section">
+  </div>
+  </div>
+  <div className="w3-row w3-center w3-black w3-padding-32">
+  <div className="w3-half w3-section">
+  </div>
+  <div className="w3-half w3-section">
+  </div>
+  </div>
 
-
+{/**end testimonials */}
 {/**start experience count */}
 
 <div className="w3-row w3-center w3-black w3-padding-32">
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
-    BUSINESS EXPERIENCE
+   PLAYERS COACHED
   </div>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">100+</span><br />
-    DESIGN PROJECTS
+   CAMPS & CLINICS
   </div>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">10+</span><br />
-    LEADERSHIP ROLES
+   COLLEGE PROGRAMS
   </div>
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">100+</span><br />

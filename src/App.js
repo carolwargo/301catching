@@ -9,6 +9,7 @@ import AboutPage from "./views/AboutPage.jsx";
 import ContactPage from "./views/ContactPage.jsx";
 import BaseballPage from "./views/BaseballPage.jsx";
 import MotorPage from "./views/MotorPage.jsx";
+import Footer from "./components/Footer.jsx";
 //import MotorLayout from "./components/Motor/MotorLayout.jsx";
 //import Scroll from "./views/Scroll.jsx";
 import VideoHeader from "./components/VideoHeader/VideoHeader.jsx";
@@ -54,7 +55,6 @@ function App() {
                   */}
 
           <Route element={<LayoutSimple />} >
-        <Route path="/motor" element={ <MotorPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/motor" element={<MotorPage />} />
@@ -63,6 +63,7 @@ function App() {
           {/* Add a catch-all route for handling errors */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

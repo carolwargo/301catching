@@ -96,7 +96,7 @@ athletic careers.</p>
     <div className="w3-col l6 m6 w3-margin-bottom">
       <div className="w3-display-container">
         <div className="w3-display-topleft w3-black w3-padding">
-            <b>CATCH</b><span className='text-secondary'>|301</span></div>
+            <b>TRAIN</b><span className='text-secondary'>CATCHING</span></div>
         <img src={Catch} alt="House" style={{width:"100%"}} 
         className='w3-opacity w3-hover-opacity-off'/>
       </div>

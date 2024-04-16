@@ -10,13 +10,11 @@ function BBSocialIcons() {
         <a href="mailto:301catching@gmail.com" className="sticky-social-icon" >
           <i className="fas fa-envelope"></i>
         </a>
-        <a href="https://wa.me/1234567890" className="sticky-social-icon" >
-          <i className="fab fa-whatsapp"></i>
-        </a>
-        <a href="/" className="sticky-social-icon" >
+     
+        <a href="https://www.instagram.com/301_catching/"  className="sticky-social-icon" >
           <i className="fab fa-twitter"></i>
         </a>
-        <a href="/" className="sticky-social-icon" >
+        <a href="https://www.instagram.com/301_catching/" className="sticky-social-icon" >
           <i className="fab fa-instagram"></i>
         </a>
         {/* Add more social media icons as needed */}
