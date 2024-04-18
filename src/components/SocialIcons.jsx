@@ -13,7 +13,7 @@ function BBSocialIcons() {
         exit={{ opacity: 0,}} // Go back above before exit
         transition={{ duration: 2, ease: "easeInOut" }} // Ease in and out
       >
-      <MDBContainer className='p-4 pb-0' style={{ position: 'fixed', top: '35%', right: 0, transform: 'translateY(40%)', zIndex: 1000 }}>
+      <MDBContainer className='p-4 pb-0' style={{ position: 'fixed', top: '40%', right: -15, transform: 'translateY(80%)', zIndex: 1000 }}>
   <section className='mb-4 d-flex flex-column align-items-end'>
   <MDBBtn
       floating

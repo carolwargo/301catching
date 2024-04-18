@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import {motion } from 'framer-motion';
 import TextTransition, {presets} from "react-text-transition";
 import Subscribe from '../components/Subscribe';
-import Button from 'react-bootstrap/Button';
-import SocialIcons from '../components/SocialIcons';
+//import Button from 'react-bootstrap/Button';
+//import SocialIcons from '../components/SocialIcons';
 import LocationView from "../assets/images/LocationView.png";
 import Hit from "../assets/images/Baseball/Hit.png";
 import Catch from "../assets/images/Baseball/Catch.png";
@@ -33,7 +33,7 @@ React.useEffect(() => {
 
     return (
         <div className="home w3-black" id="home">
-          <SocialIcons />
+       
   <motion.div
         initial={{ y: -20, opacity: 0}}
         animate={{y: 0, opacity: 1}}
@@ -165,7 +165,7 @@ athletic careers.</p>
       </div>
     </div>
     <hr />
-    {/* Start About Grid */}
+    {/* Start Testimonials Grid */}
     <div className="w3-content w3-container  w3-margin-bottom ">
     <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
     <h1 className="text-center" style={{fontSize:'2.5rem'}}><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h1>

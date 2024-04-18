@@ -16,7 +16,7 @@ function VideoHeader() {
         className="home"
         
         >
-            <header className='video-header w3-black' style={{ marginTop: '56px' }}>
+            <header className='video-header w3-black' style={{ marginTop: '' }}>
                 <video src={catchingvideo} autoPlay loop muted></video>
                 <div className='video-overlay'></div>
                 <div className='video-content'>

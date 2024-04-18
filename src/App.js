@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LayoutSimple from "./components/LayoutSimple.jsx";
 //import CatchingLayout from "./components/Catching/CatchingLayout.jsx";
+//import SocialIcons from "./components/SocialIcons.jsx";
 import CatchingPage from "./views/CatchingPage.jsx";
 import HomePage from "./views/HomePage.jsx";
 import AboutPage from "./views/AboutPage.jsx";
@@ -39,6 +40,7 @@ function App() {
               </>
             }
           />
+            {/*
              <Route
             path="/catching"
             element={
@@ -48,16 +50,18 @@ function App() {
               </>
             }
           />
+           */}
           {/*
          <Route element={<MotorLayout />}>
          <Route path="/scroll" element={<Scroll />} />
           </Route>
-                  */}
+                */}  
 
           <Route element={<LayoutSimple />} >
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/motor" element={<MotorPage />} />
+          <Route path="/catching" element={<CatchingPage />} />
      
           </Route>
           {/* Add a catch-all route for handling errors */}

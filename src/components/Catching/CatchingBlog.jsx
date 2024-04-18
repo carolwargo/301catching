@@ -1,6 +1,7 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 import moment from "moment";
+import Treadmill from "../../assets/images/Baseball/Treadmill.png";
 import {
   TwitterShareButton,
   FacebookShareButton,
@@ -20,8 +21,10 @@ function CatchingBlogPosts() {
       <h2>Blog</h2>
 
       <div className="w3-row-padding">
-    <div className="w3-display-container w3-padding">
+    <div className="w3-card">
+    <img src={Treadmill} alt="Post" style={{width:'100%'}}/>
       <img src={blogPost.imageUrl} alt="Post" />
+      <div className="container">
         <h2>{blogPost.title}</h2>
         <p>Author: {blogPost.author}</p>
         <p>
@@ -30,9 +33,8 @@ function CatchingBlogPosts() {
         </p>
         
         <p>{blogPost.content}</p>
-      </div>
-      </div>
-
+        </div>
+        <div className="card-footer">
       <div className="row d-flex border-top">
         <div className="col-12">
           <div className="w3-container w3-margin-bottom">
@@ -76,7 +78,9 @@ function CatchingBlogPosts() {
     </a>
   </span>
 </div>
-
+</div>
+      </div>
+</div>
 </div>
           </div>
         </div>

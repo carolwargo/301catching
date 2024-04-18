@@ -1,22 +1,67 @@
 // BlogPage.js
 import React from 'react';
+import {motion } from 'framer-motion';
+import TextTransition, {presets} from "react-text-transition";
 import { Link } from 'react-router-dom';
 import CatchingBlog from '../components/Catching/CatchingBlog';
 import Corey from '../assets/images/Baseball/Corey.png';
 import Catch from '../assets/images/Baseball/Catch.png';
 import Button from "react-bootstrap/Button";
 import Hit from "../assets/images/Baseball/Hit.png";
+import CoverResize from '../assets/images/Baseball/CoverResize.png';
+
+
+
+const TEXTS = [ 'CATCH', 'BLOCK', 'THROW', 'LEAD!!'];
+  
+
 
 function CatchingPage() {
   
+  const [index, setIndex] = React.useState(0);
+
+React.useEffect(() => {
+  const intervalId = setInterval(() =>
+
+    setIndex(index => index + 1),
+    2000
+  );
+  return () => clearTimeout(intervalId);
+}
+, []);
+
   return (
     <div>
-<div className='w3-black'>
-  <div className='w3-display-container w3-padding-large'>
-<h1>CATCHING</h1>
+  
+    <motion.div
+          initial={{ y: -20, opacity: 0}}
+          animate={{y: 0, opacity: 1}}
+          exit={{y: 20, opacity: 0}}
+          className="home"
+          
+          >
+<header
+  className="w3-black w3-margin-bottom d-flex justify-content-center align-items-center"
+  style={{
+    position: "relative",
+    backgroundImage: `url(${CoverResize})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: '80vh',
+  }}
+>
+  <div className="w3-content w3-container text-center w3-padding-32 w3-margin-top">
+    <p>Keep it simple... Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quisquam odio illum ex? Totam porro, iusto reiciendis dolorem natus excepturi at dolor non explicabo facere repellendus unde, culpa reprehenderit beatae.</p>
+    <div className='d-flex justify-content-center align-items-center'>
+      <TextTransition springConfig={presets.gentle} className='text-center' style={{ fontSize: '4rem', color: 'red' }} >
+        {TEXTS[index % TEXTS.length]}
+      </TextTransition>
+    </div>
+  </div>
+</header>
 
-</div>
-</div>
+
+
         <div className='row w3-row-padding'>
       
         <div className='w3-col l4 s12'>
@@ -57,7 +102,7 @@ function CatchingPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">FRAMING</span>
+                    <span className="w3-large">CATCHING</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>
@@ -71,7 +116,7 @@ function CatchingPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">BLOCKING</span>
+                    <span className="w3-large">THROWING</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>
@@ -84,7 +129,7 @@ function CatchingPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">THROWING</span>
+                    <span className="w3-large">BLOCKING</span>
                     <br></br>
                     <span>Sed mattis nunc</span>
                   </li>
@@ -98,7 +143,7 @@ function CatchingPage() {
                       className="w3-left w3-margin-right"
                       style={{ width: "15%" }}
                     ></img>
-                    <span className="w3-large">LEADERSHIP</span>
+                    <span className="w3-large">LEADING</span>
                     <br />
                     <span>Sed mattis nunc</span>
                   </li>
@@ -125,7 +170,7 @@ function CatchingPage() {
     <div className="w3-display-container w3-padding">
     <div className="w3-col l3 m6 w3-margin-bottom ">
       <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Frame</div>
+        <div className="w3-display-topleft w3-black w3-padding">Catch</div>
         <img src={Catch} alt="House" style={{width:"100%"}}/>
       </div>
     </div>
@@ -146,7 +191,7 @@ function CatchingPage() {
   
     <div className="w3-col l3 m6 w3-margin-bottom">
       <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Catch</div>
+        <div className="w3-display-topleft w3-black w3-padding">Lead</div>
         <img src={Hit} alt="House" style={{width:"100%"}}/>
       </div>
     </div>
@@ -204,6 +249,7 @@ function CatchingPage() {
       </div>
       </div>
       </div>
+      </motion.div>
     </div>
   );
 }
