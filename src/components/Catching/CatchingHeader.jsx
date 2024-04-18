@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from "react-router-dom";
+import BBSocialIcons from '../Baseball/BBSocialIcons';
 
 function CatchingHeader() {
 
@@ -31,7 +32,7 @@ function CatchingHeader() {
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 1 }}
       >
-
+<BBSocialIcons />
 
           <h1 className='w3-hide-small' style={{ fontSize: '50px' }}>
     <span><b>301</b></span><span>|CATCHING</span>

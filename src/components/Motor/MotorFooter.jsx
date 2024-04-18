@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Certified from '../../assets/images/Baseball/Certified.png';
 import LocationView from '../../assets/images/LocationView.png';
 
 
@@ -27,13 +25,17 @@ function CatchingFooter() {
 </div>
     </div>
     <div className="col-sm-12 col-md-6 col-lg-6">
-  <div className="w3-container">
-  <h3 className="w3-border-light-grey w3-padding-8">WHERE WE OPERATE!</h3>
-  <p>Where we are located.</p>
-    <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
-    <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
-    <br />Saturday-Sunday: Closed</p>
-  </div>
+    <div className="container">
+  <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
+  
+    
+  <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
+    <div className="w3-margin-top">
+    <p>Days of Operation: <br />Sunday-Saturday: By Appointment Only
+    <br/> Schedule today! 
+    </p>
+    </div>
+    </div>
 </div>
 
   </div>
@@ -43,11 +45,7 @@ function CatchingFooter() {
    
  {/*End Page Content */}
 {/*Start Footer*/}
- <footer className="w3-center w3-padding-16">
-    <img src={Certified} alt="logo" style={{width:"100px"}}/>
-  <p>Powered by <Link to="/" title="301link"  className="w3-hover-text-green"><b>301</b>CATCHING.COM</Link></p>
-</footer>
-        <p>&copy; 2021 Catching</p>
+
         </div>
     );
     }

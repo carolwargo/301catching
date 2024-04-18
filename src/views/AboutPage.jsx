@@ -7,7 +7,11 @@ import { GiGears } from "react-icons/gi";
 
 import Corey from '../assets/images/Baseball/Corey.png';
 import LocationView from '../assets/images/LocationView.png';
-import JOHN from '../assets/images/Baseball/JOHN.png';
+import TopQuote from '../assets/images/Baseball/TopQuote.png';
+//import Hit from '../assets/images/Baseball/Hit.png';
+import { MdOutlineStar } from "react-icons/md";
+
+
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../App.css';
@@ -32,7 +36,7 @@ export default function AboutPage() {
               <p className=" fw-light"><em>"My passion lies in utilizing creative design to drive innovative solutions through technology. With a distinctive blend of skills and experience, I am a seasoned full-stack software developer and UX designer deeply committed to collaboration, bringing together diverse perspectives to tackle challenges effectively. With over 20 years of experience in business management & strategic development, I bring a wealth of knowledge and expertise to every project I undertake."</em></p>
             </div>
             <div className="col-lg-6 ">
-              <img src={Corey} className="w3-round w3-image w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
+              <img src={Corey} className="w3-round w3-image w3-grayscale-max w3-opacity w3-hover-opacity-off mx-auto d-block" alt="Me" width="500" height="333" />
             </div>
           </div>
         </div>
@@ -69,95 +73,132 @@ export default function AboutPage() {
   <div className="w3-light-grey shadow">
     <div className="w3-container w3-padding-small w3-black w3-center" style= {{width:"75%"}}>75%</div>
   </div>
-
-
-
-
-
-
-{/** 
-
-              <h3><strong>FRONT END DEVELOPMENT.</strong></h3>
-              <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
           </div>
-          <p>HTML</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>CSS</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>JavaScript</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p>React.js</p>
-          <br />
-
-          <h2 className=""><strong>WHAT I DO BEST.</strong></h2>
-          <br />
-              <h4><strong>SERVER-SIDE DEVELOPMENT.</strong></h4>
-              <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Frameworks & Package Manager: </b> <br />Node.js, Express.js and NPM.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Database Design & Management: </b> <br />Relational-MYSQL and NoSQL databases-MongoDB.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>API Development:</b><br />Graph QL, RESTful API's and Webhooks.</p>
-          <div className="w3-light-grey w3-round-xlarge w3-small">
-            <div className="w3-container w3-center w3-round-xlarge w3-black" style={{width:"90%"}}>90%</div>
-          </div>
-          <p><b>Version Control:</b><br />
-          GIT + tools; VS Code and Github</p>
-          <br />
-          */}
-          </div>
-
-       
-              {/**Start skills 
- 
-  */}
   <br />
  <br />
 </div>
 <br />
 </div>
 {/**End technical proficiencies */}
-{/*start testimonials */}
-<div className="w3-row w3-center w3-black w3-padding-32">
-  <div className="w3-half w3-section">
-    <div className="row">
-    <div className="w3-third w3-section">
-    <div className="w3-container w3-card w3-white">
-      <img src={JOHN} alt="john" style={{width:'100%'}}></img>
-     </div>
-      </div>
-      <div className="w3-twothird w3-section">
-      <i className="fa fa-quote-left w3-xxlarge"></i>
-      <i className="fa fa-quote-right w3-xxlarge"></i>
-      </div>
+
+
+<div className="container w3-margin-bottom w3-grayscale">
+
+ {/* Start Testimonials Grid */}
+ {/* Start Row 1 testimonials*/}
+
+<div className="row w3-margin-bottom">
+
+     {/* Start Joe col*/}
+    <div className="col-lg-6 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+    <div className="card">
+        <div className="card-header text-center" style={{ color: 'white', fontSize: '24px' }}>
+          <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </div>
+        <div className="card-body w3-margin-top px-4">
+            <p style={{ fontSize: '14px' }}>
+            “ Being an elite catching coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack.</p>
+            <h5 className='w3-margin-top'>JOE SINGLEY <br /><span style={{fontSize:'14px'}}>Cincinnati Reds</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+                Asst Catching Coach|Bull Pen Catcher
+            </p>
+        </div>
+        </div>
     </div>
-  </div>
-  <div className="w3-half w3-section">
-  </div>
-  </div>
-  <div className="w3-row w3-center w3-black w3-padding-32">
-  <div className="w3-half w3-section">
-  </div>
-  <div className="w3-half w3-section">
-  </div>
-  </div>
+     {/* End Joe col*/}
+  
+    <div className="col-lg-6 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+    <div className="card">
+        <div className="card-header text-center" style={{ color: 'white', fontSize: '24px' }}>
+          <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </div>
+        <div className="card-body w3-margin-top px-4">
+            <p style={{ fontSize: '14px' }}>
+            301 has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament. While their training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."</p>
+            <h5 className='w3-margin-top'>RYAN TERRILL <br /><span style={{fontSize:'14px', fontWeight:'bolder'}}>George Mason University</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            Assistant Coach|Recruiting Coordinator
+            </p>
+        </div>
+    </div>
+    </div>
+    {/* End Ryan col*/}
+</div>
+ {/* End Row 1 testimonials*/}
 
-{/**end testimonials */}
+
+{/* Start Row 2 testimonials*/}
+<div className="row w3-margin-bottom">
+
+     {/* Start John col*/}
+    <div className="col-lg-6 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+    <div className="card">
+        <div className="card-header text-center" style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </div>
+        <div className="card-body w3-margin-top px-4">
+        <p className='mb-0' style={{fontSize:'14px'}}>
+        <i>Corey is an outstanding catching instructor. 
+He excels at adapting his approach to suit the individual Player. His understanding of the subtleties of catching allow him to impart a high-level focus on technique and instinct. Corey empowers catchers to seize every advantage. His approach is direct and instruction is visual.</i></p>
+            <h5 className='w3-margin-top'>JOHN POSS<br /><span style={{fontSize:'14px', fontWeight:'bolder'}}>University of Maryland</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            Assistant Coach|Recruiting Coordinator
+            </p>
+        </div>
+    </div>
+    </  div>
+     {/* End John col*/}
+ 
+      {/*Start Guy col*/}
+    <div className="col-lg-6 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+        <div className="card">
+        <div className="card-header text-center" style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </div>
+        <div className="card-body w3-margin-top px-4">
+            <p style={{ fontSize: '14px' }}>
+               <i> “301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area. Surpassing the “industry norms” and incessantly exploring new & innovative techniques that empower players to thrive both mentally & physically, on and off the field."</i>
+            </p>
+            <h5 className='w3-margin-top'>GUY SMITH<br /><span style={{fontSize:'14px'}}>Huntingtown HS</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            5-Tool|Former UMD Pitcher
+            </p>
+        </div>
+        </div>
+    </div>
+    {/* End Guy col*/}
+</div>
+ {/* End Row 2 testimonials*/}
+  </div>
+{/**End testimonials */}
+
+    <div className="w3-content w3-container  w3-margin-bottom ">
+    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
+    <h1 className="text-center w3-padding-16" style={{fontSize:'2.5rem'}}><b>MOTOR</b><span className="text-secondary">|PREFERENCES.</span></h1>
+    </div>
+
+
+ 
+
+
+
 {/**start experience count */}
-
 <div className="w3-row w3-center w3-black w3-padding-32">
   <div className="w3-quarter w3-section">
     <span className="w3-xlarge">20<span style={{fontSize:'10px'}}>yrs</span> +</span><br />
@@ -199,13 +240,14 @@ export default function AboutPage() {
     </div>
     
     <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
-<div className="container">
+    <div className="container">
   <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
   
-    <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
+  <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
     <div className="w3-margin-top">
-    <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
-    <br />Saturday-Sunday: Closed</p>
+    <p>Days of Operation: <br />Sunday-Saturday: By Appointment Only
+    <br/> Schedule today! 
+    </p>
     </div>
   </div>
 </div>

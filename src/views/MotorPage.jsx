@@ -595,26 +595,17 @@ const Motor = () => {
           </div>
 
           <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom">
-            <div className="container">
-              <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">
-                WHERE WE OPERATE!
-              </h3>
-
-              <img
-                src={LocationView}
-                className="w3-image"
-                alt="location-map"
-                style={{ width: "100%" }}
-              />
-              <div className="w3-margin-top">
-                <p>
-                  Hours of Operation: <br />
-                  Monday-Friday: 9:00 AM - 6:00 PM
-                  <br />
-                  Saturday-Sunday: Closed
-                </p>
-              </div>
-            </div>
+          <div className="container">
+  <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
+  
+    
+  <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
+    <div className="w3-margin-top">
+    <p>Days of Operation: <br />Sunday-Saturday: By Appointment Only
+    <br/> Schedule today! 
+    </p>
+    </div>
+    </div>
             </div>
              </div>
           </div>

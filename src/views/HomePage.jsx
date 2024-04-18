@@ -1,27 +1,53 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {motion } from 'framer-motion';
+import TextTransition, {presets} from "react-text-transition";
+import Subscribe from '../components/Subscribe';
 import Button from 'react-bootstrap/Button';
-import BBSocialIcons from '../components/Baseball/BBSocialIcons';
+import SocialIcons from '../components/SocialIcons';
 import LocationView from "../assets/images/LocationView.png";
 import Hit from "../assets/images/Baseball/Hit.png";
 import Catch from "../assets/images/Baseball/Catch.png";
-import about from '../assets/images/Baseball/about.png';
-import Certified from '../assets/images/Baseball/Certified.png';    
+import about from '../assets/images/Baseball/about.png';   
 import TopQuote from '../assets/images/Baseball/TopQuote.png';
 import BottomQuote from '../assets/images/Baseball/BottomQuote.png';
 import { MdOutlineStar } from "react-icons/md";
 
+const TEXTS = [ 'EMPOWERING', 'TREMENDOUS', 'OUTSTANDING', 'ELITE', 'LEADING', 'UNDENIABLE','PRESENCE',];
+  
 
 
 function HomePage() {
+
+const [index, setIndex] = React.useState(0);
+
+React.useEffect(() => {
+  const intervalId = setInterval(() =>
+
+    setIndex(index => index + 1),
+    3000
+  );
+  return () => clearTimeout(intervalId);
+}
+, []);
+
     return (
         <div className="home w3-black" id="home">
+          <SocialIcons />
+  <motion.div
+        initial={{ y: -20, opacity: 0}}
+        animate={{y: 0, opacity: 1}}
+        exit={{y: 20, opacity: 0}}
+        className="home"
+        
+        >
+  
  {/*Start Page Content */}
  <div className="w3-content w3-padding">
  {/**Start page container */}
  <div className="w3-container">
-    <div className="">
-      <BBSocialIcons />
+   
+     
    
 <div className="row">
     <div className="w3-col l6 m6 w3-margin-bottom">
@@ -56,6 +82,7 @@ function HomePage() {
    <br />
    <br />
    <br />
+   <div className="">
    <h3 className=" w3-border-light-grey "><b>MOTOR</b>
     <span className='fw-light'> |PREFERENCE</span></h3>
   <p className="w3-margin-bottom">What is Motor Preference?</p>
@@ -89,113 +116,11 @@ athletic careers.</p>
    <br />
    <br />
    <br />
-
-
-   
-    <div className="row">
-    <div className="w3-col l6 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">
-            <b>TRAIN</b><span className='text-secondary'>CATCHING</span></div>
-        <img src={Catch} alt="House" style={{width:"100%"}} 
-        className='w3-opacity w3-hover-opacity-off'/>
-      </div>
-    </div>
-    <div className="w3-col l6 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">
-            <b>HIT</b><span className='text-secondary'>|301</span></div>
-        <img src={Hit} alt="House" style={{width:"100%"}} 
-        className='w3-opacity w3-hover-opacity-off'/>
-      </div>
-    </div>
-    
-    </div>
     </div>
     </div> 
     </div>
 
-{/**Start Barn Builds */}
-<div id="sheds"> 
-<hr/>   
-    <div className="w3-row-padding">
-    <div className="w3-display-container w3-padding">
-    <h4><b>TRAIN</b><span className="fw-light">|301</span></h4>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sit natus facere veritatis blanditiis saepe voluptate velit molestias quasi. Fugit quae delectus inventore eius aliquam natus voluptas minus nulla voluptatum?</p>
-        </div>
-    <div className="w3-display-container w3-padding">
-    <div className="w3-col l3 m6 w3-margin-bottom ">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Frame</div>
-        <img src={Catch} alt="House" style={{width:"100%"}}/>
-      </div>
-    </div>
-    <div className="w3-col l3 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Throw</div>
-        <img src={Hit} alt="House" style={{width:"100%"}}/>
-      </div>
-    </div>
 
-    <div className="w3-col l3 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Block</div>
-        <img src={Catch} alt="House" style={{width:"100%"}}/>
-      </div>
-    </div>
-    
-  
-    <div className="w3-col l3 m6 w3-margin-bottom">
-      <div className="w3-display-container">
-        <div className="w3-display-topleft w3-black w3-padding">Catch</div>
-        <img src={Hit} alt="House" style={{width:"100%"}}/>
-      </div>
-    </div>
-
-   
-    <div className="border-bottom border-top shadow w3-padding-large">
-  <div className="row justify-content-center align-items-center">
-    <div className="col-sm-12 col-md-8 col-lg-8 px-2">
-  <h4><b>Title</b></h4>  
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab qui 
-    exercitationem doloribus totam itaque? Velit soluta ea dolores 
-    molestias pariatur reiciendis maxime nostrum. Distinctio possimus 
-    sed consequatur reprehenderit repudiandae velit 
-    <span>   
-        <Link to="/" 
-        className="link-primary justify-content-end text-decoration-none"> 
-        learn more...</Link>
-        </span>
-        </p> 
-       </div>
-    
-
-    <div className="col-sm-12 col-md-4 col-lg-4">
-    <div className="w3-margin-top w3-margin-bottom">
-  <div className="mb-2">
-    <Button variant="dark" className="w-100">
-      <Link className="text-white text-decoration-none"><i className="fas fa-download"></i> Specs</Link>
-    </Button>
-  </div>
-  <div className="mb-2">
-    <Button variant="dark" className="w-100">
-      <Link className="text-white text-decoration-none"><i className="fas fa-calendar-alt"></i> Showing</Link>
-    </Button>
-  </div>
-  <div className="mb-2">
-    <Button variant="dark" className="w-100">
-      <Link className="text-white text-decoration-none"><i className="fas fa-share"></i> Share</Link>
-    </Button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-{/**End Barn Builds */}
-<br />
 
 
 
@@ -213,7 +138,7 @@ athletic careers.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis et voluptas tempora! Repellendus excepturi quod fuga blanditiis quos. Magnam ipsum, aut fuga assumenda magni totam voluptatibus reiciendis laboriosam nihil autem!</p>
         </div>
         <div className="col-sm-12 col-md-8 col-lg-8">
-          <img src={about} alt="about" style={{ width: "100%" }}  className='w3-opacity w3-hover-opacity-off'/>
+          <img src={about} alt="about" style={{ width: "100%" }}  className='w3-opacity w3-hover-opacity-off w3-greyscale'/>
         </div>
       </div>
       <br />
@@ -244,104 +169,141 @@ athletic careers.</p>
     <div className="w3-content w3-container  w3-margin-bottom ">
     <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
     <h1 className="text-center" style={{fontSize:'2.5rem'}}><b>OUR</b><span className="text-secondary">|REPUTATION.</span></h1>
-   <br />
    </div>
-
-
-     {/* Start Testimonials Grid */}
-    <div className="row w3-margin-bottom w3-grayscale">
-    <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
-        <img src={Hit} alt="John" style={{ width: "100%" }} />
-        <div className="w3-container w3-white w3-padding-16">
-        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
-  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-</header>
-<div className="w3-margin-top">
-<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
-        <p style={{ fontSize: '14px' }}>“ Being an elite catching coach requires a unique combination of skill and personality to interact with different people and talents. With the selfless goal to better the mind, Corey’s understanding and execution of this is what separates him from the pack."</p>
-        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
-        <h5 className='w3-margin-top'>JOE SINGLEY <br /><span style={{fontSize:'18px'}}>Cincinatti Reds</span></h5>
-        <p className="w3-opacity" style={{fontSize:'14px'}}>
-        Asst Catching Coach|Bull Pen Catcher</p>
-      </div>
-      </div>
-      </div>
+  
+   <div className="d-flex flex-column align-items-center justify-content-center flex-wrap">
+  <h1 style={{ fontSize: '2rem', color: 'red', display: 'inline-flex' }} className="text-center align-items-center">
+    <b>301</b> <span className="text-secondary">|CATCHING.</span> <TextTransition springConfig={presets.gentle}>
+      {TEXTS[index % TEXTS.length]}
+    </TextTransition>
+  </h1>
+  <p className="text-center"> What others have to say...</p>
+</div>
 
 
 
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
-        <img src={Hit} alt="John" style={{ width: "100%" }} />
-        <div className="w3-container w3-white w3-padding-16">
-        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
-  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-</header>
-<div className="w3-margin-top">
-<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
-        <p style={{ fontSize: '14px' }}>“Corey is an outstanding catching instructor. He empowers catchers to seize every advantage. His approach is direct and instruction is visual. I'm appreciative of the friendship and have the uptmost confidence in Corey’s ability to provide knowledgeable assitance."</p>
-        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px'}}/>
-        <h5 className='w3-margin-top'>JOHN POSS <br /><span style={{fontSize:'18px'}}>University of Maryland</span></h5>
-        <p className="w3-opacity" style={{fontSize:'14px'}}>
-Assistant Coach|Recruiting Coordinator</p>
-      </div>
-      </div>
-      </div>
 
 
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
-        <img src={Hit} alt="John" style={{ width: "100%" }} />
-        <div className="w3-container w3-white w3-padding-16">
-        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
-  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-</header>
-<div className="w3-margin-top">
-<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
-        <p style={{ fontSize: '14px' }}>"301CATCHING has a tremendous presence in the baseball community. The undeniable progress in player development serves as a testament. While their training consistently yields high-level results, it's the caliber of individuals he molds into champions that is held in my highest regard."</p>
-        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
-        <h5 className='w3-margin-top'>RYAN TERRILL <br /><span style={{fontSize:'18px'}}>George Mason Univ.</span></h5>
-        <p className="w3-opacity" style={{fontSize:'14px'}}>
-Assistant Coach|Recruiting Coordinator</p>
-      </div>
-      </div>
-      </div>
 
 
-      <div className="w3-col l3 m6 w3-margin-bottom w3-margin-top text-center  p-1">
-        <img src={Hit} alt="John" style={{ width: "100%" }} />
-        <div className="w3-container w3-white w3-padding-16">
-        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
-  <MdOutlineStar className="mx-1"  style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-  <MdOutlineStar  className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
-</header>
-<div className="w3-margin-top">
-<img src={TopQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px', paddingRight:'10px', paddingLeft:'10px' }}/>
-        <p style={{ fontSize: '14px', paddingBottom:'0px' }}>“301 Catching stands as one of the leading instructional catching programs in the mid-Atlantic area, surpassing “industry norms” and incessantly exploring new & innovative techniques thatempower players to thrive both mentally & physically, on and off the field.”</p>
-        <img src={BottomQuote} alt="topquote" style={{ width: "100%", paddingBottom:'10px' }}/>
-        <h5 className='w3-margin-top'>GUY SMITH <br /><span style={{fontSize:'18px'}}>Huntingtown High School</span></h5>
-        <p className="w3-opacity" style={{fontSize:'14px'}}>
-        5-Tool|Former UMD Pitcher</p>
-      </div>
-      </div>
-      </div>
+{/* Start Testimonials Grid */}
+ {/* Start Row 1 testimonials*/}
+
+<div className="row w3-margin-bottom">
+  {/* Start Img col before Joe*/}
+<div className="col-lg-3 col-md-6  w3-margin-bottom w3-margin-top text-center p-1">
+        <img src={Hit} alt="John" className="img-fluid  w3-grayscale" />
     </div>
+     {/* End Start Img col before Joe*/}
+
+     {/* Start Joe col*/}
+    <div className="col-lg-3 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </header>
+        <div className="w3-margin-top px-2">
+            <p style={{ fontSize: '20px' }}>
+              <i> “An <span style={{color:'red', fontWeight:'bolder'}}>ELITE</span> catching coach- Corey’s understanding and execution separates him from the pack."</i> 
+            </p>
+            <h5 className='w3-margin-top'>JOE SINGLEY <br /><span style={{fontSize:'14px'}}>Cincinnati Reds</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+                Asst Catching Coach|Bull Pen Catcher
+            </p>
+        </div>
+    </div>
+     {/* End Joe col*/}
+       {/*Start Img col before Ryan*/}
+    <div className="col-lg-3 col-md-6 w3-margin-bottom w3-margin-top text-center p-1">
+        <img src={Hit} alt="John" className="img-fluid  w3-grayscale" />
+    </div>
+     {/*End Img col before Ryan*/}
+    <div className="col-lg-3 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+        <header className="text-center " style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </header>
+        <div className="w3-margin-top px-2">
+            <p style={{ fontSize: '20px' }}>
+            <i>"301 has a <span style={{color:'red', fontWeight:'bold'}}>TREMENDOUS PRESENCE</span> in the baseball community- Undeniable player development serves as a testament..."</i></p>
+            <h5 className='w3-margin-top'>RYAN TERRILL <br /><span style={{fontSize:'14px', fontWeight:'bolder'}}>George Mason University</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            Assistant Coach|Recruiting Coordinator
+            </p>
+        </div>
+    </div>
+    {/* End Ryan col*/}
+</div>
+ {/* End Row 1 testimonials*/}
+
+
+{/* Start Row 2 testimonials*/}
+<div className="row w3-margin-bottom">
+  {/* Start Img col before John */}
+<div className="col-lg-3 col-md-6 w3-margin-bottom w3-margin-top text-center p-1">
+        <img src={Hit} alt="John" className="img-fluid  w3-grayscale" />
+    </div>
+     {/* End Start Img col before John */}
+
+     {/* Start John col*/}
+    <div className="col-lg-3 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </header>
+        <div className="w3-margin-top px-2">
+        <p style={{ fontSize: '20px' }}> <i>“301CATCHING is outstanding! <span style={{color:'red', fontWeight:'bolder'}}>EMPOWERING</span> catchers to seize every advantage..."</i></p>
+        
+            <h5 className='w3-margin-top'>JOHN POSS<br /><span style={{fontSize:'14px', fontWeight:'bolder'}}>University of Maryland</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            Assistant Coach|Recruiting Coordinator
+            </p>
+        </div>
+    </div>
+     {/* End John col*/}
+       {/*Start Img col before Guy*/}
+    <div className="col-lg-3 col-md-6 w3-margin-bottom w3-margin-top text-center p-1">
+        <img src={Hit} alt="Guy" className="img-fluid" />
+    </div>
+     {/*End Img col before Guy*/}
+      {/*Start Guy col*/}
+    <div className="col-lg-3 col-md-6  w3-grayscale-min w3-margin-bottom w3-margin-top text-center p-1">
+        <header className="text-center" style={{ color: 'white', fontSize: '24px' }}>
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+            <MdOutlineStar className="mx-1" style={{ boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', backgroundColor:'red', borderRadius: '2px' }} />
+        </header>
+        <div className="w3-margin-top px-2">
+            <p style={{ fontSize: '20px' }}>
+               <i> “301 Catching stands as a <span style={{color:'red', fontWeight:'bolder'}}>LEADING CATCHING PROGRAM </span>in the mid-Atlantic area..."</i>
+            </p>
+            <h5 className='w3-margin-top'>GUY SMITH<br /><span style={{fontSize:'14px'}}>Huntingtown HS</span></h5>
+            <p className="w3-opacity" style={{fontSize:'14px'}}>
+            5-Tool|Former UMD Pitcher
+            </p>
+        </div>
+    </div>
+    {/* End Guy col*/}
+</div>
+ {/* End Row 2 testimonials*/}
+
+
+
     <div className="w3-content w3-container  w3-margin-bottom ">
-    <img src={TopQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
-    <h1 className="text-center w3-padding-16" style={{fontSize:'2.5rem'}}><b>MOTOR</b><span className="text-secondary">|PREFERENCES.</span></h1>
-    
+    <img src={BottomQuote} alt="topquote" style={{ width: "100%", marginBottom:'0px',  paddingBottom:'0px' }}/>
+    </div>
+    <h1 className="text-center w3-padding-16" style={{fontSize:'2rem'}}><b>MOTOR</b><span className="text-secondary">|PREFERENCES.</span></h1>
     <div className="container text-align d-flex justify-content-center align-items-center flex-wrap">
 <div className="row">
 <div className="col-sm-12 col-md-3 col-lg-2"></div>
@@ -366,7 +328,7 @@ Assistant Coach|Recruiting Coordinator</p>
 </div>
 
    <br />
-   </div>
+  
   </div>
 </div>
 
@@ -392,13 +354,14 @@ Assistant Coach|Recruiting Coordinator</p>
     </div>
     
     <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom" >
-<div className="container">
+    <div className="container">
   <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
-  
-    <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
+   
+  <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
     <div className="w3-margin-top">
-    <p>Hours of Operation: <br />Monday-Friday: 9:00 AM - 6:00 PM
-    <br />Saturday-Sunday: Closed</p>
+    <p>Days of Operation: <br />Sunday-Saturday: By Appointment Only
+    <br/> Schedule today! 
+    </p>
     </div>
   </div>
 </div>
@@ -409,11 +372,11 @@ Assistant Coach|Recruiting Coordinator</p>
    
  {/*End Page Content */}
 {/*Start Footer*/}
- <footer className="w3-center w3-padding-16">
-    <img src={Certified} alt="logo" style={{width:"100px"}}/>
-  <p>Powered by <Link to="/" title="301link"  className="w3-hover-text-green"><b>301</b>CATCHING.COM</Link></p>
-</footer>
+<Subscribe/>
 
+   
+
+</motion.div>
 </div>
 
     );

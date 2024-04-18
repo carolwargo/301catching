@@ -43,14 +43,19 @@ function VideoHeader() {
         <h6 style={{color:'white'}}> Providing Players with the skills to master their craft & elevate their game.</h6>
         <hr/>
         <div className='w3-padding-large'>
+        <Link to='/catching'> 
 <button className="w3-button w3-large w3-black m-1" 
 style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'}}>
 CATCHING </button>
+</Link>
     
     <Link to='/motor'> 
-    <button className="w3-button w3-large w3-black m-1" style={{boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)'
-}}
->
+    <button 
+    className="w3-button w3-large  m-1" 
+    style={{
+        boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)', 
+        backgroundColor:'#0188CB',
+        color:'white'}} >
 WHAT'S NEW
       </button>
       </Link> 

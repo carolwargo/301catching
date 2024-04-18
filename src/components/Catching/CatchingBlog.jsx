@@ -6,6 +6,7 @@ import {
   FacebookShareButton,
   //PinterestShareButton,
 } from "react-share";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import post1 from "../../data/posts/catching-posts/catching-post1.json"; // Import the specific blog post
 
@@ -14,9 +15,12 @@ function CatchingBlogPosts() {
 
   return (
     <div>
+
+
       <h2>Blog</h2>
 
-      <div>
+      <div className="w3-row-padding">
+    <div className="w3-display-container w3-padding">
       <img src={blogPost.imageUrl} alt="Post" />
         <h2>{blogPost.title}</h2>
         <p>Author: {blogPost.author}</p>
@@ -27,7 +31,8 @@ function CatchingBlogPosts() {
         
         <p>{blogPost.content}</p>
       </div>
-    
+      </div>
+
       <div className="row d-flex border-top">
         <div className="col-12">
           <div className="w3-container w3-margin-bottom">
