@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {motion} from 'framer-motion';
 import LocationView from "../assets/images/LocationView.png";
 import about from "../assets/images/Baseball/about.png";
 import Certified from "../assets/images/Baseball/Certified.png";
@@ -23,52 +24,47 @@ const Motor = () => {
     }
   };
 
+
   return (
-    <div className="">
+    <motion.div
+    initial={{ y: -20, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    exit={{y: 20, opacity: 0}}
+    className="home"
+    
+    >
+    <div className="motor" id="motor">
       <div className="w3-container w3-padding-top-64 ">
-      <div className="row py-3 justify-content-center align-items-center shadow">
-        <div className="col-sm-12 col-md-4 col-lg-4">
+      <div className="row py-3 
+       align-items-end shadow">
+        <div className="col-sm-12 col-md-4 col-lg-4 justify-content-center">
           <img src={MPTransparent} alt="MPTransparent" style={{ width: "100%" }} />
         </div>
-          <div className="col-sm-12 col-md-8 col-lg-8  flex-column">
-          <div className="">
-              <div className="container" style={{ marginBottom: "20px"}}>
-              {/**Start social icons*/}
-              <div className="motor-socials" id="motor-socials">
-    <div className="motor-sticky-social-icons d-flex justify-content-start">
-             <a href='mailto:301catching@gmail.com' 
-                style={{paddingRight:'2px'}}>
-                  <button
-                  className="w3-button w3-blue w3-section"
-                  style={{padding:'5px 10px'}}
-                  type="submit"
-                >
-                  <i className="fas fa-envelope"></i> 
-                </button>
-                </a> 
-                <a href="https://twitter.com/301Catching" style={{paddingRight:'2px'}}>
-                  <button
-                  className="w3-button w3-blue w3-section shadow"
-                  style={{padding:'5px 10px'}}
-                  type="submit"
-                >
-                  <i className="fab fa-twitter"></i> 
-                </button>
-                </a> 
-                <a href="https://www.instagram.com/301_catching/" style={{paddingRight:'2px'}}><button
-                  className="w3-button w3-blue w3-section shadow"
-                  style={{padding:'5px 10px'}}
-                  type="submit"
-                >
-                    <i className="fab fa-instagram"></i> 
-                </button>
-                </a> 
-                </div>
-        </div>
+        <div className="col-sm-12 col-md-8 col-lg-8 d-flex flex-column align-items-end">
+  <div className="container justify-content-end">
+    {/* Start social icons */}
+    <div className="motor-socials" id="motor-socials">
+      <div className="motor-sticky-social-icons d-flex justify-content-end">
+        <a href='mailto:301catching@gmail.com' style={{paddingRight:'2px'}}>
+          <button className="w3-button w3-blue w3-section" style={{padding:'5px 10px'}} type="submit">
+            <i className="fas fa-envelope"></i> 
+          </button>
+        </a> 
+        <a href="https://twitter.com/301Catching" style={{paddingRight:'2px'}}>
+          <button className="w3-button w3-blue w3-section shadow" style={{padding:'5px 10px'}} type="submit">
+            <i className="fab fa-twitter"></i> 
+          </button>
+        </a> 
+        <a href="https://www.instagram.com/301_catching/" style={{paddingRight:'2px'}}>
+          <button className="w3-button w3-blue w3-section shadow" style={{padding:'5px 10px'}} type="submit">
+            <i className="fab fa-instagram"></i> 
+          </button>
+        </a> 
+      </div>
     </div>
   </div>
-  </div>
-  
+</div>
+
   </div> 
               {/**End social icons*/}
 
@@ -76,14 +72,13 @@ const Motor = () => {
 
               {/**Start Content*/}
               {/**Start Intro */}
-              <div id="item-1">
+              <div>
                 <div className="row d-flex w3-margin-top">
                   <div className="col-sm-12 col-md-4 col-lg-4  flex-column ">
-          <div className="">
-            <nav id="navbar-webdev" className="h-100 ">
-          
+                  <div className="w3-padding-16">
+          <div className="container w3-padding-large w3-padding-16 w3-light-grey shadow">
+            <nav id="navbar-webdev" className="h-100 w3-margin-bottom">
                 <nav className="nav flex-column ">
-
                 <button className="w3-button w3-black mt-2  fw-bold" type="button" onClick={() => handleButtonClick("item-5")}>
                     CONTACT US
                   </button>
@@ -100,12 +95,64 @@ const Motor = () => {
                   <button className="w3-button w3-blue text-black  mt-1  fw-bold" type="button" onClick={() => handleButtonClick("item-4")}>
                     <i className="fas fa-user-circle"></i> TESTIMONIALS
                   </button>
-                 
                 </nav>
-             
             </nav>
+            </div>
           </div>
+          <div className="w3-padding-16">
+          <div className="container w3-padding-large w3-light-grey shadow">
+            <p className="w3-margin-top" style={{fontSize:'14px'}}> 
+            <b className="text-primary" style={{fontSize:'16px'}}>READY TO GET STARTED?</b> 
+            <br />Fill out the form below to either speak with an expert 
+            or schedule an evaluation. </p>
+             <form action="/action_page.php" target="_blank" className="w3-margin-top ">
+               <input
+                 className="w3-input w3-border"
+                 type="text"
+                 placeholder="Name"
+                 required
+                 name="Name"
+               />
+               <input
+                 className="w3-input w3-section w3-border"
+                 type="text"
+                 placeholder="Email"
+                 required
+                 name="Email"
+               />
+             
+             <div className="w3-section">
+ <label className="w3-checkbox w3-margin-left">
+   <input 
+     type="checkbox" 
+     name="question" 
+     value="question"
+     className="w3-check"
+   />
+  <span className="w3-margin-left" style={{fontSize:'14px'}}> I have questions.</span>
+ </label>
+</div>
 
+<div className="w3-section w3-margin-left">
+ <label className="w3-checkbox">
+   <input 
+     type="checkbox" 
+     name="schedule" 
+     value="schedule"
+     className="w3-check"
+   />
+   <span className="w3-margin-left" style={{fontSize:'14px'}}> I want to be evaluated.</span>
+ </label>
+</div>
+               <button
+                 className="w3-button w3-black w3-section w3-margin-left"
+                 type="submit"
+               >
+                 <i className="fa fa-paper-plane"></i> SUBMIT
+               </button>
+             </form>
+                 </div>
+                 </div>
                   </div>
                   <div className="col-sm-12 col-md-8">
                 <h2 className=" w3-border-light-grey text-primary w3-padding-24">
@@ -117,13 +164,25 @@ const Motor = () => {
                 <h4 className=" w3-border-light-grey w3-padding-top-24">
                   <b className="text-primary">OVERVIEW</b>
                 </h4>
-                <p className="w3-grayscale ">
+                <p className="w3-grayscale w3-margin-bottom">
                   "Health & Fitness professionals alike are witnessing a
                   scientifically validated revolution. This transformation is
                   fundamentally reshaping the way we approach athlete care and
                   preparation, marking a significant evolution in injury
                   prevention, rehabilitation, and athletic performance."
                 </p>
+      
+                <hr className="w3-margin-top"/>
+                <h5 className="fw-light">
+                  <i>"THE SCIENCE OF THE BRAIN."</i>
+                </h5>
+                <h4 className=" w3-border-light-grey w3-padding-top-24">
+                  <b className="text-primary">HOW DOES IT WORK?</b>
+                </h4>
+                <p className="w3-grayscale ">The human brain is lateralized and has dominant areas that are used extensively to the detriment of other less used areas that are opposite to them. The use of the dominant brain areas will be natural while its opposite will require more effort.
+
+</p>
+              
                 <hr />
 
 
@@ -138,58 +197,7 @@ const Motor = () => {
                     engineers, trainers, health and sports professionals.
                   </h5>
                   </div>
-             <div className="container w3-padding-large w3-light-grey shadow">
-            
-             <p className="w3-margin-top" style={{fontSize:'12px'}}> <b className="text-primary">READY TO GET STARTED?</b> <br />Fill out the form below to either speak with an expert or schedule an evaluation. </p>
-              
-
-              <form action="/action_page.php" target="_blank" className="w3-margin-top ">
-                <input
-                  className="w3-input w3-border"
-                  type="text"
-                  placeholder="Name"
-                  required
-                  name="Name"
-                />
-                <input
-                  className="w3-input w3-section w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="Email"
-                />
-              
-              <div className="w3-section">
-  <label className="w3-checkbox w3-margin-left">
-    <input 
-      type="checkbox" 
-      name="question" 
-      value="question"
-      className="w3-check"
-    />
-   <span className="w3-margin-left" style={{fontSize:'14px'}}> I have questions.</span>
-  </label>
-</div>
-
-<div className="w3-section w3-margin-left">
-  <label className="w3-checkbox">
-    <input 
-      type="checkbox" 
-      name="schedule" 
-      value="schedule"
-      className="w3-check"
-    />
-    <span className="w3-margin-left" style={{fontSize:'14px'}}> I want to be evaluated.</span>
-  </label>
-</div>
-                <button
-                  className="w3-button w3-black w3-section w3-margin-left"
-                  type="submit"
-                >
-                  <i className="fa fa-paper-plane"></i> SUBMIT
-                </button>
-              </form>
-                  </div>
+           
                 <br></br>
                 <br></br>
                 <p>
@@ -626,6 +634,7 @@ const Motor = () => {
         </p>
       </footer>
     </div>
+    </motion.div>
   );
 };
 
