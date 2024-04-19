@@ -18,8 +18,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <div className="App" >
+      <BrowserRouter basename="301catching">
         <Routes>
           {/* Define routes for HomePage and BaseballPage with VideoHeader */}
           <Route
