@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import catchingvideo from '../../assets/catchingvideo.mp4';
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
+//import MainNav from '../Nav/MainNav.jsx';
+import { Navbar } from 'react-bootstrap';
+import MPTransparent from '../../assets/images/Baseball/MPTransparent.png';
+import {
+    MDBContainer,
+    MDBNavbarBrand,
+    MDBNavbarToggler,
+    MDBIcon,
+    MDBNavbarNav,
+    MDBNavbarItem,
+    MDBNavbarLink,
+   // MDBBtn,
+    //MDBDropdown,
+    //MDBDropdownToggle,
+    //MDBDropdownMenu,
+    //MDBDropdownItem,
+    MDBCollapse,
+  } from 'mdb-react-ui-kit';
+  
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from "react-router-dom";
 
 function VideoHeader() {
+    const [openBasic, setOpenBasic] = useState(false);
 
     return (
         <motion.div
@@ -66,7 +83,75 @@ WHAT'S NEW
                        
             </div>
                     </div>
+
+
+                    <Navbar expand="lg" className="fixed-top shadow" style={{ backgroundColor: 'white', zIndex: 100, boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)' }}> 
+                    <MDBContainer fluid>
+        <MDBNavbarBrand href="/" className=" ">
+                   <b style={{fontFamily:'serif', color:'black'}}>301</b>
+                   </MDBNavbarBrand>
+      
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setOpenBasic(!openBasic)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar open={openBasic}>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' as={Link} to='/'>HOME
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+        
+<MDBNavbarLink as={Link} to='/about'>ABOUT</MDBNavbarLink>
+<MDBNavbarLink as={Link} to='/catching'>CATCHING</MDBNavbarLink>
+<MDBNavbarLink as={Link} to='/performance'>PERFORMANCE</MDBNavbarLink>
+<MDBNavbarLink as={Link} to='/contact'>CONTACT</MDBNavbarLink>
+
+
+          {/*}  <MDBNavbarItem>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                  Dropdown
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link>Action</MDBDropdownItem>
+                  <MDBDropdownItem link>Another action</MDBDropdownItem>
+                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavbarItem>
+    */}
+          </MDBNavbarNav>
+
+          <div className='d-flex justify-content-center w-auto shadow bg-secondary-subtle border border-dark border-2'>
+  <Link to='/motor' style={{ borderColor: '#0188CB', paddingLeft:'10px' }}>
+    <div className='d-flex align-items-center'> 
+      <img 
+        src={MPTransparent} 
+        alt="Email Icon" 
+        style={{ 
+          height: '38px', 
+          cursor: 'pointer'
+        }}  
+        className='w3-margin-right w3-padding-small' // Add the blinking-image class
+      />   
+    </div>
+  </Link>
+</div>
+
+          
+        </MDBCollapse>
+      </MDBContainer>
+    </Navbar>
+                    {/** 
                     <Navbar expand="lg" className="fixed-top shadow" style={{ backgroundColor: 'white', zIndex: 100, boxShadow: '0 4px 12px rgba(255, 255, 255, 0.2)' }}>
+                    <MainNav/>
+                  
                 <Container fluid className='align-items-center'>
                     <Navbar.Brand   href="/" className="w3-tag w3-hover-opacity shadow">
                    <b style={{fontFamily:'serif', color:'white'}}>301</b>
@@ -89,7 +174,9 @@ WHAT'S NEW
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
+             
             </Navbar>
+               */}
                 </div>
             </header>
         </motion.div>

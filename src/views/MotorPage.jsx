@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion';
-import LocationView from "../assets/images/LocationView.png";
-import about from "../assets/images/Baseball/about.png";
 import Certified from "../assets/images/Baseball/Certified.png";
 import Partner from "../assets/images/Baseball/Partner.webp";
 //import Catch from '../assets/images/Baseball/Catch.png';
@@ -161,9 +159,9 @@ const Motor = () => {
                 <h5 className="fw-light">
                   <i>"A REVOLUTIONARY STANDARD FOR ATHLETE CARE & TRAINING."</i>
                 </h5>
-                <h4 className=" w3-border-light-grey w3-padding-top-24">
+                <h3 className=" w3-border-light-grey w3-padding-top-24">
                   <b className="text-primary">OVERVIEW</b>
-                </h4>
+                </h3>
                 <p className="w3-grayscale w3-margin-bottom">
                   "Health & Fitness professionals alike are witnessing a
                   scientifically validated revolution. This transformation is
@@ -173,15 +171,27 @@ const Motor = () => {
                 </p>
       
                 <hr className="w3-margin-top"/>
-                <h5 className="fw-light">
+               {/**  <h5 className="fw-light">
                   <i>"THE SCIENCE OF THE BRAIN."</i>
                 </h5>
+                */}
                 <h4 className=" w3-border-light-grey w3-padding-top-24">
-                  <b className="text-primary">HOW DOES IT WORK?</b>
+                  <b className="text-primary">How do Motor Preferences work?</b>
                 </h4>
                 <p className="w3-grayscale ">The human brain is lateralized and has dominant areas that are used extensively to the detriment of other less used areas that are opposite to them. The use of the dominant brain areas will be natural while its opposite will require more effort.
 
 </p>
+<div className="row">
+<h5 className="fw-light">
+                  <i>"THE SCIENCE OF THE BRAIN."</i>
+                </h5>
+                <h4 className=" w3-border-light-grey w3-padding-top-24">
+                  <b className="text-primary">How do Motor Preferences work?</b>
+                </h4>
+                <p className="w3-grayscale ">The human brain is lateralized and has dominant areas that are used extensively to the detriment of other less used areas that are opposite to them. The use of the dominant brain areas will be natural while its opposite will require more effort.
+
+</p>
+</div>
               
                 <hr />
 
@@ -462,163 +472,6 @@ const Motor = () => {
 
 
 
-      {/***********************************************************************/}
-      {/**Start About Section*/}
-      <div
-        id="about"
-        className="about-section"
-        style={{ backgroundColor: "black", width: "100%" }}
-      >
-        <div className="w3-padding-large w3-padding-32 text-white">
-          <div className="w3-container">
-            <div className="row justify-content-center align-items-center">
-              <div className="col-sm-12 col-md-4 col-lg-4">
-              
-                <h3>
-                  <b>301</b>
-                  <span className="fw-light">|CATCHING</span>{" "}
-                </h3>
-                <p>
-                 Certified partner of Motor Preferences Experts. 
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-8 col-lg-8 w3-grayscale-max">
-                <img
-                  src={about}
-                  alt="about"
-                  style={{ width: "100%" }}
-                  className="w3-opacity w3-hover-opacity-off"
-                />
-              </div>
-            </div>
-            <br />
-          </div>
-          <hr />
-          <div className="row w3-padding w3-grayscale">
-            <div className="col-md-4">
-              <div className="container">
-                <h3>
-                  <b>OUR</b>
-                  <span className="text-secondary">VISION.</span>
-                </h3>
-                <p style={{ fontSize: "14px" }}>
-                  Driven by a visionary outlook, our approach to real estate is
-                  refreshingly distinct. Unlike conventional definitions of
-                  luxury that prioritize size and paid amenities, our vision is
-                  centered around the notion of uniqueness. For us, luxury
-                  properties are not merely defined by their grandeur, but by
-                  their exceptional qualities and unparalleled character. It's
-                  this emphasis on individuality and exclusivity that sets their
-                  projects apart in a crowded marketplace.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="container ">
-                <h3>
-                  <b>OUR</b>
-                  <span className="text-secondary">PASSION.</span>
-                </h3>
-                <p style={{ fontSize: "14px" }}>
-                  Our passion lies in uncovering hidden gems, each property
-                  meticulously chosen for its ability to transport you to a
-                  world of unparalleled tranquility and opulence. Whether you
-                  seek the solace of a high-end cabin enveloped by nature's
-                  embrace, the serenity of a she shed designed for refined
-                  relaxation, or the rustic charm of a barn transformed into a
-                  luxurious abode, Peasant Properties is your gateway to an
-                  extraordinary living experience.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="container">
-                <h3>
-                  <b>OUR</b>
-                  <span className="text-secondary">COMMITMENT.</span>
-                </h3>
-                <p style={{ fontSize: "14px" }}>
-                  We pledge and commitment to personalized service and an
-                  unwavering dedication to excellence, we strive to make your
-                  dream of owning a unique sanctuary a reality. Trust in Peasant
-                  Properties to guide you on a journey to discover the
-                  extraordinary, where luxury meets seclusion and exclusivity
-                  knows no bounds. Welcome to a world where every property tells
-                  a story, and your next chapter begins with us.
-                </p>
-              </div>
-            </div>
-          </div>
-          <hr />
-          {/* Start Testimonials Grid */}
-        </div>
-
-      <div className="w3-container w3-padding-48 w3-white" id="contact">
-        <div className="w3-container">
-        <div className="row justify-content-center align-items-center">
-          <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom">
-            <div className="container">
-              <h1 className="w3-border-light-grey w3-padding-16">
-                <b>CONTACT</b>US
-              </h1>
-              <p>READY TO GET START!</p>
-
-              <form action="/action_page.php" target="_blank">
-                <input
-                  className="w3-input w3-border"
-                  type="text"
-                  placeholder="Name"
-                  required
-                  name="Name"
-                />
-                <input
-                  className="w3-input w3-section w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="Email"
-                />
-                <input
-                  className="w3-input w3-section w3-border"
-                  type="text"
-                  placeholder="Subject"
-                  required
-                  name="Subject"
-                />
-                <input
-                  className="w3-input w3-section w3-border"
-                  type="text"
-                  placeholder="Comment"
-                  required
-                  name="Comment"
-                />
-                <button
-                  className="w3-button w3-light-gray w3-section"
-                  type="submit"
-                >
-                  <i className="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <div className="col-sm-12 col-md-6 col-lg-6 w3-margin-bottom">
-          <div className="container">
-  <h3 className="w3-border-light-grey w3-padding-8 w3-margin-bottom">WHERE WE OPERATE!</h3>
-  
-    
-  <img src={LocationView} className="w3-image" alt='location-map' style={{width:"100%"}}/>
-    <div className="w3-margin-top">
-    <p>Days of Operation: <br />Sunday-Saturday: By Appointment Only
-    <br/> Schedule today! 
-    </p>
-    </div>
-    </div>
-            </div>
-             </div>
-          </div>
-        </div>
-      </div>
 
       {/*End Page Container */}
 
